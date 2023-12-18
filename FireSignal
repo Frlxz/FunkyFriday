@@ -422,6 +422,7 @@ local Window = Library:NewWindow("Funky Friday Mobile")
 -- Section
 local MainSection = Window:NewSection("Main")
 local FixSection = Window:NewSection("Fixing")
+local CreditsSection = MainWindow:NewSection("Credits")
 
 -- Toggle
 MainSection:CreateToggle("Auto Player", function(AutoPlay)
@@ -442,6 +443,18 @@ FixSection:CreateButton("Virtual Input", function()
     FixVirtualInput()
 end)
 
+CreditsSection:CreateButton("Nadir & Wally", function()
+    print("Nadir Hub x Wally")
+end)
+
+CreditsSection:CreateButton("Nadir#0106", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Credits/main/Username"))()
+end)
+
+CreditsSection:CreateButton("Copy Discord Invite Link", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Credits/main/Discord"))()
+end)
+
 -- Function
 function FixVirtualInput()
 loadstring(Game:HttpGet("https://raw.githubusercontent.com/Frlxz/FunkyFriday/main/Virtualinput"))()
@@ -457,4 +470,4 @@ local function Notify(Title, Text, Time)
     )
 end
 
-Notify("Notification", "You Can Use Auto Player Now, Changed To 'FireSignal, Please Enable Again The Auto Player Toggle")
+Notify("Notification", "You Can Use Auto Player Now, Changed To 'FireSignal', Please Enable Again The Auto Player Toggle")
