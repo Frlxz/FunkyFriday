@@ -422,7 +422,7 @@ local Window = Library:NewWindow("Funky Friday Mobile")
 -- Section
 local MainSection = Window:NewSection("Main")
 local FixSection = Window:NewSection("Fixing")
-local CreditsSection = MainWindow:NewSection("Credits")
+local CreditsSection = Window:NewSection("Credits")
 
 -- Toggle
 MainSection:CreateToggle("Auto Player", function(AutoPlay)
