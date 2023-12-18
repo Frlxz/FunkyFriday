@@ -422,6 +422,7 @@ local Window = Library:NewWindow("Funky Friday Mobile")
 -- Section
 local MainSection = Window:NewSection("Main")
 local FixSection = Window:NewSection("Fixing")
+local CreditsSection = MainWindow:NewSection("Credits")
 
 -- Toggle
 MainSection:CreateToggle("Auto Player", function(AutoPlay)
@@ -440,6 +441,18 @@ end)
 -- Button
 FixSection:CreateButton("FireSignal", function()
     FixFireSingal()
+end)
+
+CreditsSection:CreateButton("Nadir & Wally", function()
+    print("Nadir Hub x Wally")
+end)
+
+CreditsSection:CreateButton("Nadir#0106", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Credits/main/Username"))()
+end)
+
+CreditsSection:CreateButton("Copy Discord Invite Link", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Credits/main/Discord"))()
 end)
 
 -- Function
