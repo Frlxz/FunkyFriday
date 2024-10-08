@@ -1,3 +1,4 @@
+
 local start = tick()
 local client = game:GetService('Players').LocalPlayer;
 local set_identity = (type(syn) == 'table' and syn.set_thread_identity) or setidentity or setthreadcontext
@@ -225,10 +226,10 @@ end
 -- autoplayer
 local chanceValues do
     chanceValues = { 
-        Sick = 96,
-        Good = 92,
-        Ok = 87,
-        Bad = 75,
+        Sick = 100,
+        Good = 0,
+        Ok = 0,
+        Bad = 0,
     }
 
     local keyCodeMap = {}
@@ -656,7 +657,7 @@ local SaveManager = {} do
 end
 
 local Window = UI:CreateWindow({
-    Title = string.format('Fsploits Funky Friday | version: %s | updated: %s', metadata.version, metadata.updated),
+    Title = string.format('Nadir Hub Funky Friday | version: %s | updated: %s', metadata.version, metadata.updated),
     AutoShow = true,
     
     Center = true,
@@ -729,7 +730,7 @@ Groups.Credits = Tabs.Miscellaneous:AddRightGroupbox('Credits')
         label.TextLabel.RichText = true
     end
 
-    addRichText(Groups.Credits:AddLabel('<font color="#3da5ff">Fsploit</font> - New Owner'))
+    addRichText(Groups.Credits:AddLabel('<font color="#3da5ff">Nadir Hub</font> - New Owner'))
     addRichText(Groups.Credits:AddLabel('<font color="#de6cff">Wally</font> - Old Owner'))
 
 
