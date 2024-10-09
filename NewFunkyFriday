@@ -104,7 +104,7 @@ end
 
 local themeManager = urlLoad("https://pastebin.com/raw/9S5HqLBY")
 
-local metadata = urlLoad("https://raw.githubusercontent.com/Bart3kk/funky-friday-autoplay/main/metadata.lua")
+local metadata = urlLoad("https://pastebin.com/raw/sfq7nBuz")
 local httpService = game:GetService('HttpService')
 
 local framework, scrollHandler, network
